@@ -31,7 +31,7 @@ def convert_txt(f_in, f_out):
             arr_salary[i] = 1
 
     for age, education, sex, hourse, salary in zip(ages, educations, sexs, hourses, salarys):
-        f_out.write("{},{},{},{}\n".format(survived, pclass, sex, age))
+        f_out.write("{},{},{},{}\n".format(p_age, p_education, p_sex, p_hours, p_salary))
 
 f_in_name = sys.argv[1]
 f_out_name = os.path.join("data", "convert", "train.csv")
